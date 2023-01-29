@@ -6,4 +6,4 @@ Elisabeth Ryder,
 River Montoya
 ____________________
 
-![This is an image](/images/Davenport_Panthers_logo.png)
+![This is an image](public/images/Davenport_Panthers_logo.png)
