@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <section id="contactSection">
+            <h1>Contact</h1>
+            <article id="contactTop">
+                <form name="contact" method="POST">
+                    <label for="formFirst">First Name</label>
+                    <input type="text" name="first" id="formFirst" placeholder="John" required>
+                    <label for="formLast">Last Name</label>
+                    <input type="text" name="last" id="formLast" placeholder="Doe" required>
+                    <label for="formEmail">Email Address</label>
+                    <input type="email" name="email" id="formEmail" placeholder="example@email.com" required>
+                    <label for="formComments">Comments</label>
+                    <textarea name="comments" id="formComments" placeholder="How may we help you today?" required></textarea>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+            </article>
+            <article id="contactBottom">
+                <h2>Other Contact Methods</h2>
+                <p>Address: 123 Somewhere Lane, Someplace MI</p>
+                <p>Email: hello@ourproject.com</p>
+                <p>Phone: (111) 222-3333</p>
+            </article>
+        </section>
+        <footer>
+            <p>CISP 316 Team 1</p>
+        </footer>
+    </body>
+</html>
