@@ -130,3 +130,12 @@ label, input, textarea {
     max-width: 600px;
     text-align: center;
 }
+
+.landscape {
+    height: 100px;
+    width: 100%;
+}
+.landscape img{
+    width: 100%;
+    height: auto;
+}
