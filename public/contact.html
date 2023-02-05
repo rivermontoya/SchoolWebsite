@@ -16,17 +16,57 @@
         <section class="contentStart" id="contactSection">
             <h1>Contact</h1>
             <article id="contactTop">
-                <form name="contact" method="POST">
+                <form name="contact" id="contactForm" method="POST">
                     <label for="formFirst">First Name</label>
-                    <input type="text" name="first" id="formFirst" placeholder="John" required>
+                    <input type="text" name="first" id="formFirst" placeholder="John" onblur="checkFirst()" required>
                     <label for="formLast">Last Name</label>
-                    <input type="text" name="last" id="formLast" placeholder="Doe" required>
+                    <input type="text" name="last" id="formLast" placeholder="Doe" onblur="checkLast()" required>
                     <label for="formEmail">Email Address</label>
-                    <input type="email" name="email" id="formEmail" placeholder="example@email.com" required>
+                    <input type="email" name="email" id="formEmail" placeholder="example@email.com" onblur="checkEmail()" required>
                     <label for="formComments">Comments</label>
-                    <textarea name="comments" id="formComments" placeholder="How may we help you today?" required></textarea>
-                    <input type="submit" name="submit" value="Submit">
+                    <textarea name="comments" id="formComments" placeholder="How may we help you today?" onblur="checkComments()" required></textarea>
+                    <input type="submit" name="submit" id="submitBtn" value="Submit">
                 </form>
+                <script>
+                    // Form values
+                    let first = document.getElementById("formFirst");
+                    let last = document.getElementById("formLast");
+                    let email = document.getElementById("formEmail");
+                    let comments = document.getElementById("formComments");
+
+                    function checkFirst() {
+                        if(first.value == "") {
+                            first.style.backgroundColor = "#ffcccc";
+                        }
+                        else {
+                            first.style.backgroundColor = "white";
+                        }
+                    }
+                    function checkLast() {
+                        if(last.value == "") {
+                            last.style.backgroundColor = "#ffcccc";
+                        }
+                        else {
+                            last.style.backgroundColor = "white";
+                        }
+                    }
+                    function checkEmail() {
+                        if(email.value == "") {
+                            email.style.backgroundColor = "#ffcccc";
+                        }
+                        else {
+                            email.style.backgroundColor = "white";
+                        }
+                    }
+                    function checkComments() {
+                        if(comments.value == "") {
+                            comments.style.backgroundColor = "#ffcccc";
+                        }
+                        else {
+                            comments.style.backgroundColor = "white";
+                        }
+                    }
+                </script>
             </article>
             <article id="contactBottom">
                 <h2>Other Contact Methods</h2>

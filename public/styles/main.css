@@ -130,6 +130,9 @@ label, input, textarea {
     max-width: 600px;
     text-align: center;
 }
+#errors {
+    display: none;
+}
 
 .landscape {
     height: 100px;
