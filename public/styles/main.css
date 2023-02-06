@@ -109,6 +109,7 @@ label, input, textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .homeBox {
     background-color: rgba(0,0,0,.5);
@@ -118,8 +119,9 @@ label, input, textarea {
     border-radius: 15px;
     padding: 10px;
     max-width: 600px;
-    margin-top: 40vh;
-    padding: 10vh;
+    margin: 10%;
+    padding: 30px;
+    
 }
 #servicesOptions {
     padding: 5px;
