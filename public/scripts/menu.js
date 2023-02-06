@@ -8,8 +8,8 @@
 */
 
 /*------- NAV BAR IMPLEMENTATION -------*/
-
-function loadMenu() {
+//on window load, run loadMenu function
+window.onload = function loadMenu() {
 //get the ul element by its id
 var Menu = document.getElementById("addMenuLinks");
 //add all links to site as needed
