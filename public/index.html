@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Home</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/responsive.css">
-        <script src="scripts/menu.js"></script>
-    </head>
-    <body onload="loadMenu()">
-        <nav id="addMenuLinks">
-            <!-- The Menu is added with JavaScript! -->
-        </nav>
-        <div class="landscape">
-            <!-- <picture> uses two images to display the page for different screen sizes,
-            the gradient is done differently on each images -->
-            <picture>
-                <source media="(min-width: 900px)" srcset="images/HomePageCoverMountainsLarge.jpg">
-                <source media="(min-width: 0px)" srcset="images/HomePageCoverMountains.jpg">
-                <img src="HomePageCoverMountains.jpg" alt="IfItDoesntMatchAnyMedia">
-            </picture>
+<head>
+    <title>Home</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="scripts/menu.js"></script>
+</head>
 
-        </div>
-        <div class="landscape">
-            <picture>
-                <source media="(min-width: 900px)" srcset="images/HomePageCoverMountainsLarge.jpg">
-                <source media="(min-width: 0px)" srcset="images/HomePageCoverMountains.jpg">
-                <img src="HomePageCoverMountains.jpg" alt="IfItDoesntMatchAnyMedia">
-            </picture>
+<body onload="loadMenu()">
+    <nav id="addMenuLinks">
+        <!-- The Menu is added with JavaScript! -->
+    </nav>
+    <!-- Landscape class divs resize to fit viewport -->
+    <div class="landscape contentStart">
 
+        <!-- This div is content above the picture -->
+        <div style="position: absolute">
+            <h1>Text</h1>
         </div>
-        <section class="contentStart" id="homeSection">
-        </section>
-        <footer>
-            <p>CISP 316 Team 1</p>
-        </footer>
-    </body>
+
+        <!-- <picture> uses two images to display the page for different screen sizes,
+        the gradient is done differently on each images 
+
+        picture is also styled to center with the top fixed to the navbar-->
+        <picture>
+            <source media="(min-width: 900px)" srcset="images/HomePageCoverMountainsLarge.jpg">
+            <source media="(min-width: 0px)" srcset="images/HomePageCoverMountains.jpg">
+            <img src="HomePageCoverMountains.jpg" alt="IfItDoesntMatchAnyMedia">
+        </picture>
+    </div>
+
+    <!-- Second landscape div, plan to animate this as a slideshow that flips through automatically -->
+    <div style="background-color:gray" class="landscape">
+        <div class="contentStart" style="position: absolute">
+            <h1>Text</h1>
+        </div>
+    </div>
+    <footer id="addFooter">
+        <!-- The Menu is added with JavaScript! -->
+    </footer>
+</body>
 </html>
