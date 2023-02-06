@@ -3,8 +3,9 @@
     "",
     "\\public",
     "\\public\\images",
+    "\\public\\scripts",
     "\\public\\styles"
   ],
-  "SelectedNode": "\\public\\styles\\main.css",
+  "SelectedNode": "\\public\\styles\\responsive.css",
   "PreviewInSolutionExplorer": false
 }
