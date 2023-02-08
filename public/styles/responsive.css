@@ -6,6 +6,20 @@
 .contentStart {
     animation: transitionIn 0.75s;
 }
+/*Scrollable reveal section*/
+.reveal {
+    position: relative;
+    transform: translateX(-350px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+/*Scrollable reveal section end*/
+
 @keyframes transitionIn {
     from {
         opacity: 0;

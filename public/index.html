@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <script src="scripts/imports.js"></script>
+    <script src="scripts/reveal.js"></script>
 </head>
 <body>
-
     <nav id="addMenuLinks">
         <!-- The Menu is added with JavaScript! -->
     </nav>
 
-    <!-- Landscape class divs resize to fit viewport ----------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------LandscapeDivs------>
+    <!-- Landscape class divs resize to fit viewport -----------------------------------------------------1stPane------------>
     <div class="landscape contentStart homeSection">
         <!-- This div is the transparent box container on top of the picture -->
         <div class="homeBox" style="position: absolute">
@@ -32,19 +33,18 @@
     </div>
 
 
-    <!-- Second landscape div, plan to animate this as a slideshow that flips through automatically ------------------------->
+    <!-- Second landscape div, plan to animate this as a slideshow that flips through automatically -------2ndPane----------->
     <div style="background-color:gray" class="landscape contentStart homeSection">
-        <div class="homeBox" style="position: absolute">
+        <!-- homeBox&text-container class  are in main.css
+             reveal class is in responsive.css-->
+        <div class="homeBox text-container reveal" style="position: absolute">
             <h2 style="color: white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat ipsum a aliquet aliquet.</h2>
         </div>
     </div>
-
+    <!----------------------------------------------------------------------------------------------------EndLandscapeDivs--->
 
     <footer id="addFooter">
         <!-- The Footer is added with JavaScript! -->
     </footer>
-
-    <section class="contentStart" id="contactSection">
-    </section>
 </body>
 </html>
