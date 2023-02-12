@@ -35,6 +35,18 @@ section {
     width: 80%;
     margin: auto;
 }
+#homeSection {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+/*Cant center the homebox without webkit????*/
+    text-align: -webkit-center;
+}
+#contactSection, #servicesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 footer {
     background-color: #222222;
     color: white;
@@ -100,29 +112,6 @@ label, input, textarea {
 .centerText {
     text-align: center;
 }
-#contactSection, #servicesSection, homeSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.homeSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.homeBox {
-    background-color: rgba(0,0,0,.5);
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #222222;
-    border-radius: 15px;
-    padding: 10px;
-    max-width: 600px;
-    margin: 10%;
-    padding: 30px;
-    
-}
 #servicesOptions {
     padding: 5px;
     text-align: center;
@@ -156,7 +145,7 @@ label, input, textarea {
 #errors {
     display: none;
 }
-
+/*homepage pane*/
 .landscape {
     height: 100vh;
     width: 100%;
@@ -166,4 +155,16 @@ label, input, textarea {
     height: 100vh;
     width: 100%;
     object-fit: cover;
+}
+/*homepage transparent div*/
+.homeBox {
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #222222;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 600px;
+    margin: 10%;
+    padding: 30px;
 }

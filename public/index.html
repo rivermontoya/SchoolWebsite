@@ -14,35 +14,38 @@
     <nav id="addMenuLinks">
         <!-- The Menu is added with JavaScript! -->
     </nav>
+    <section id="homeSection" class="contentStart">
+        <!------------------------------------------------------------------------------------------LandscapeDivs------>
+        <!-- Landscape class divs resize to fit viewport -------------------------------------------1stPane------------>
+        <div style="background-color:black" class="landscape">
 
-    <!----------------------------------------------------------------------------------------------------LandscapeDivs------>
-    <!-- Landscape class divs resize to fit viewport -----------------------------------------------------1stPane------------>
-    <div class="landscape contentStart homeSection">
-        <!-- This div is the transparent box container on top of the picture -->
-        <div class="homeBox" style="position: absolute">
-            <h1 style="color: white">Web Devs</h1>
-            <h2 style="color: white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat ipsum a aliquet aliquet.</h2>
+            <!-- <picture> uses two images to display the page
+            for different screen sizes, the
+            gradient is done differently on each images -->
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/HomePageCoverMountainsLarge.jpg">
+                <source media="(min-width: 0px)" srcset="images/HomePageCoverMountains.jpg">
+                <img src="HomePageCoverMountains.jpg" alt="IfItDoesntMatchAnyMedia">
+            </picture>
+            <!-- This div is the transparent box container
+            on top of the picture -->
+            <div class="homeBox" style="position:relative; top:-100vh">
+                <h1 style="color: white;">Web Devs</h1>
+                <h2 style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat ipsum a aliquet aliquet.</h2>
+            </div>
         </div>
-        <!-- <picture> uses two images to display the page for different screen sizes,
-        the gradient is done differently on each images -->
-        <picture>
-            <source media="(min-width: 900px)" srcset="images/HomePageCoverMountainsLarge.jpg">
-            <source media="(min-width: 0px)" srcset="images/HomePageCoverMountains.jpg">
-            <img src="HomePageCoverMountains.jpg" alt="IfItDoesntMatchAnyMedia">
-        </picture>
-    </div>
+        <!------------------------------------------------------------------------------------------End1stPane--------->
 
-
-    <!-- Second landscape div, plan to animate this as a slideshow that flips through automatically -------2ndPane----------->
-    <div style="background-color:gray" class="landscape contentStart homeSection">
-        <!-- homeBox&text-container class  are in main.css
-             reveal class is in responsive.css-->
-        <div class="homeBox text-container reveal" style="position: absolute">
-            <h2 style="color: white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat ipsum a aliquet aliquet.</h2>
+        <!-------------------------plan to animate this as a slideshow that flips through automatically ---2ndPane----->
+        <div style="background-color:gray" class="landscape">
+            <!-- homeBox&text-container class  are in main.css
+            reveal class is in responsive.css-->
+            <div class="homeBox text-container reveal">
+                <h2 style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat ipsum a aliquet aliquet.</h2>
+            </div>
         </div>
-    </div>
-    <!----------------------------------------------------------------------------------------------------EndLandscapeDivs--->
-
+        <!------------------------------------------------------------------------------------------EndLandscapeDivs--->
+    </section>
     <footer id="addFooter">
         <!-- The Footer is added with JavaScript! -->
     </footer>
