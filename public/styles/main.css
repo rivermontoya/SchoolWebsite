@@ -112,11 +112,11 @@ label, input, textarea {
 .centerText {
     text-align: center;
 }
-#servicesOptions {
+#serviceOptions {
     padding: 5px;
     text-align: center;
 }
-#servicesOptions>div {
+#serviceOptions>div {
     display: inline-block;
     box-sizing: border-box;
     position: relative;
@@ -124,7 +124,7 @@ label, input, textarea {
     border-radius: 8px;
     background-color: #ddd;
 }
-#servicesOptions>div>span {
+#serviceOptions>div>span {
     display: flex;
     align-items: center;
     height: 50px;
