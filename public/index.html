@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="scripts/animateChars/jquery.serialeffect.css" />
+    <script src="scripts/animateChars/jquery.slim.min.js"></script>
+    <script src="scripts/animateChars/jquery.serialeffect.min.js"></script>
     <script src="scripts/imports.js"></script>
     <script src="scripts/reveal.js"></script>
 </head>
@@ -35,7 +39,6 @@
             </div>
         </div>
         <!------------------------------------------------------------------------------------------End1stPane--------->
-
         <!-------------------------plan to animate this as a slideshow that flips through automatically ---2ndPane----->
         <div style="background-color:gray" class="landscape">
             <!-- homeBox&text-container class  are in main.css
@@ -49,5 +52,13 @@
     <footer id="addFooter">
         <!-- The Footer is added with JavaScript! -->
     </footer>
+    <script>
+        $(document).ready(function () {
+            // jquery.serialeffect initialisation
+            $.serialeffect({
+                elementsSelector: 'h2',
+                });
+        });
+    </script>
 </body>
 </html>

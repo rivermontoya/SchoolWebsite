@@ -22,7 +22,7 @@ var Footer = document.getElementById("addFooter");
 
 //working on centering footer better... styled with footer img
 //in main.css
-Footer.innerHTML = "<img height=\"30vh;\" src=\"images/favicon.svg\" alt=\"favicon\">";
+Footer.innerHTML = "<img src=\"images/favicon.svg\" alt=\"favicon\">";
 Footer.innerHTML += "<p>WebDevs</p>";
 }
 //NOTE: The " character must be escaped for the script to work properly.
