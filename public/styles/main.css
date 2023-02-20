@@ -61,7 +61,7 @@ footer img {
 form {
     display: flex;
     flex-direction: column;
-    border: 2px solid #222222;
+    border: 2px solid white;
     border-radius: 15px;
     padding: 10px;
     max-width: 600px;
@@ -69,6 +69,7 @@ form {
 }
 label {
     padding-bottom: 2px;
+    color: white;
 }
 input, textarea {
     padding: 5px;
@@ -135,7 +136,8 @@ label, input, textarea {
     width: 100%;
 }
 #contactBottom {
-    border: 2px solid #222222;
+    color: white;
+    border: 2px solid white;
     border-radius: 15px;
     padding: 10px;
     margin: 25px 0;
@@ -168,4 +170,27 @@ label, input, textarea {
     max-width: 600px;
     margin: 10%;
     padding: 30px;
+}
+
+.firefly {
+    display: none;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+    position: absolute;
+    background-color: rgb(128,128,128);
+}
+
+#contactSection {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #111111;
+}
+#contactSection h1 {
+    color: white;
+}
+#contactForm {
+    position: relative;
+    z-index: 5;
 }
