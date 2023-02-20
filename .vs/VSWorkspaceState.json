@@ -4,8 +4,8 @@
     "\\public",
     "\\public\\images",
     "\\public\\scripts",
+    "\\public\\scripts\\animateChars",
     "\\public\\styles"
   ],
-  "SelectedNode": "\\public\\contact.html",
   "PreviewInSolutionExplorer": false
 }
