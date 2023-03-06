@@ -7,7 +7,11 @@ let table = document.getElementById("costTable");
 
 function addRow() {
     // Get values from form
-
+    const item = document.getElementById("formService");
+    const quantity = document.getElementById("formQuantity");
+    const price = getPrice(quantity, 350);
+    //Use constructor
+    ServiceItem(item, quantity, price);
 }
 
 function getPrice(quantity, itemPrice) {
