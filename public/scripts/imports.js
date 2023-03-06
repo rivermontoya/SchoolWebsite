@@ -1,10 +1,10 @@
 "use strict";
 /*    
-      JavaScript for menu
+      JavaScript for menu and footer
       Author: Elisabeth Ryder
       Date:   2/5/23
 
-      Filename: menu.js
+      Filename: imports.js
 */
 
 /*------- NAV BAR IMPLEMENTATION -------*/
@@ -15,8 +15,11 @@ var Menu = document.getElementById("addMenuLinks");
 //add all links to site as needed
 Menu.innerHTML = "<a href=\"index.html\">Home</a>";
 Menu.innerHTML += "<a href=\"services.html\">Services</a>";
+Menu.innerHTML += "<a href=\"costestimator.html\">Cost Estimator</a>";
 Menu.innerHTML += "<a href=\"contact.html\">Contact</a>";
 
+
+/*------- FOOTER IMPLEMENTATION -------*/
 //get p element by id for footer
 var Footer = document.getElementById("addFooter");
 
