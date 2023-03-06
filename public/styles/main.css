@@ -113,6 +113,16 @@ label, input, textarea {
     font-size: 12pt;
     font-family: "Trebuchet MS";
 }
+table {
+    border: 1px solid black;
+    font-size: 14pt;
+    border-collapse: collapse;
+    font-family: "Trebuchet MS";
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px 5px;
+}
 .centerText {
     text-align: center;
 }

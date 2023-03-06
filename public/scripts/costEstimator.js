@@ -1,22 +1,22 @@
+"use strict";
 //design inspired by the cost estimator by Oracle here: https://www.oracle.com/cloud/costestimator.html
 
-"use strict";
-/*    
-      JavaScript for inserting Cost Estimator table
-      Author: Elisabeth Ryder
-      Date:   3/5/23
+let table = document.getElementById("costTable");
 
-      Filename: costEstimator.js
-*/
+// Define prices here
 
-/*------- COST ESTIMATOR IMPLEMENTATION -------*/
-//on window load, run loadMenu function
-window.onload = function loadCostEstTable() {
-    //get the ul element by its id
-    var CostEst = document.getElementById("addCostEstTable");
-    //add the header row
-    CostEst.innerHTML = "<table><tr><th>Service Name</th><th>Description</th><th>Notes</th><th>Cost</th></tr></table>";
-    //add and manipulate the form...?
+function addRow() {
+    // Get values from form
 
 }
-//NOTE: If used, the " character must be escaped for the innerHTML script to work properly.
+
+function getPrice(quantity, itemPrice) {
+    return quantity * itemPrice;
+}
+
+// Constructor for service items
+function ServiceItem(item, quantity, price) {
+    this.item = item;
+    this.quantity = quantity;
+    this.price = price;
+}
