@@ -69,6 +69,15 @@ form {
     max-width: 600px;
     margin: auto;
 }
+form label {
+    padding-bottom: 5px;
+}
+#formService {
+    margin-bottom: 5px;
+}
+#formQuantity {
+    margin-bottom: 5px;
+}
 label {
     padding-bottom: 2px;
     color: white;
