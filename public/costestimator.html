@@ -19,29 +19,31 @@
             <p>Select the services you need with the configurations specific to your project, team, or company to help you do what you do best. Let us help you with offering just the right selection of services at just the right price.</p>
 
             <form id="costEstimator" name="costEstForm">
-                <label style="color:black" for="formService">Select a Service: </label>
+                <label for="formService">Select a Service: </label>
                 <select id="formService">
-                    <option value="">Static Page Content</option>
-                    <option value="">User Login Capability/Forums</option>
-                    <option value="">Store Capabilities</option>
-                    <option value="">Private Intranet Capabilities</option>
+                    <option value="Static Page Content">Static Page Content</option>
+                    <option value="User Login Capability/Forums">User Login Capability/Forums</option>
+                    <option value="Store Capabilities">Store Capabilities</option>
+                    <option value="Private Intranet Capabilities">Private Intranet Capabilities</option>
                 </select>
-                <label style="color:black" for="formQuantity">Select how many users to serve: </label>
+                <label for="formQuantity">Select how many users to serve: </label>
                 <select id="formQuantity">
-                    <option value="">1-100</option>
-                    <option value="">100-1000</option>
-                    <option value="">1000-10000</option>
-                    <option value="">10000 or more</option>
+                    <option value="100">1-100</option>
+                    <option value="1000">100-1000</option>
+                    <option value="10000">1000-10000</option>
+                    <option value="100000">10000 or more</option>
                 </select>
-                <!-- <input type="text" name="first" id="formFirst" placeholder=""> -->
-                <input type="submit" name="submit" id="submitBtn" value="Submit">
+                <!-- <input type="submit" name="submit" id="submitBtn" value="Submit"> -->
             </form>
+            <button onclick="addRow()" id="submitBtn">Submit</button>
             <table id="costTable">
-                <tr>
-                    <th>Service Name</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                </tr>
+                <tbody id="costTbody">
+                    <tr>
+                        <th>Service Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </tbody>
             </table>
             <script src="scripts/costEstimator.js"></script>
             <p></p>
