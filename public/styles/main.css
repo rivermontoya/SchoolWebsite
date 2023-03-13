@@ -204,7 +204,7 @@ th, td {
     margin: 10%;
     padding: 30px;
 }
-
+/*contact page firefly display*/
 .firefly {
     display: none;
     height: 4px;
@@ -230,13 +230,20 @@ th, td {
 
 /*index page scroll to top CSS*/
 .scrollToTop {
-    margin: 0 30px 20px 0;
+    margin: 0 30px 15px 0;
     text-align: center;
     text-decoration: none;
     position: fixed;
     bottom: 0;
     right: 0;
     display: none;
+}
+.scrollToTop img {
+    padding: 5px;
+    background-color: #222222;
+    border-radius: 3em;
+    max-width: 3em;
+    max-height: 3em;
 }
 
 .scrollToTop:hover {
