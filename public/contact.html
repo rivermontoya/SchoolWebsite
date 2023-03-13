@@ -70,12 +70,26 @@
                     }
                 </script>
             </article>
-            <article id="contactBottom">
+            <article id="contactBottom" onmouseover="bright()" onmouseout="dark()">
                 <h2>Other Contact Methods</h2>
                 <p>Address: 123 Somewhere Lane, Someplace MI</p>
                 <p>Email: hello@ourproject.com</p>
                 <p>Phone: (111) 222-3333</p>
             </article>
+            <script>
+                let contactBottom = document.getElementById("contactBottom");
+
+                function bright() {
+                    contactBottom.style.backgroundColor = "white";
+                    contactBottom.style.color = "black";
+                    contactBottom.style.zIndex = "10";
+                }
+                function dark() {
+                    contactBottom.style.backgroundColor = "";
+                    contactBottom.style.color = "white";
+                    contactBottom.style.zIndex = "";
+                }
+            </script>
         </section>
         <footer id="addFooter">
             <!-- The Footer is added with JavaScript! -->
