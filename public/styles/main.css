@@ -51,13 +51,21 @@ section {
 footer {
     background-color: #222222;
     color: white;
-    padding: 0 10%;
-    max-height: 50px;
-    display: flex;
-    flex-direction: row;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*this center css was generated with: http://howtocenterincss.com/#contentType=text&horizontal=center&vertical=middle and was greatly appreciated.*/
 }
 footer img {
     padding: 5px;
+    max-height: 40px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer p#footDetails {
+    padding: 0 50px;
 }
 form {
     background-color: white;
@@ -249,4 +257,17 @@ th, td {
 
 .scrollToTop:hover {
     text-decoration: none;
+}
+
+
+/* MEDIA QUERY FORMAT*/
+@media only screen and (max-width: 700px) {
+    footer p {
+        display: none;
+    }
+}
+@media only screen and (max-width: 845px) {
+    .scrollToTop {
+        padding: 25px 5px;
+    }
 }
