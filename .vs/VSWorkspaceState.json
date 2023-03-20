@@ -1,11 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\public",
-    "\\public\\scripts",
-    "\\public\\scripts\\animateChars",
-    "\\public\\styles"
+    ""
   ],
-  "SelectedNode": "\\public\\scripts\\animateChars\\jquery.serialeffect.js",
   "PreviewInSolutionExplorer": false
 }
