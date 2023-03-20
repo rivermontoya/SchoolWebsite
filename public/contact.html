@@ -11,25 +11,25 @@
     <script src="scripts/contactParticles.js"></script>
     <script src="scripts/imports.js"></script>
 </head>
-    <body>
-        <nav id="addMenuLinks">
-            <!-- The Menu is added with JavaScript! -->
-        </nav>
-        <section class="contentStart" id="contactSection">
-            <h1>Contact</h1>
-            <article id="contactTop">
-                <form name="contact" id="contactForm" method="POST">
-                    <label for="formFirst">First Name</label>
-                    <input type="text" name="first" id="formFirst" placeholder="John" onblur="checkFirst()" required>
-                    <label for="formLast">Last Name</label>
-                    <input type="text" name="last" id="formLast" placeholder="Doe" onblur="checkLast()" required>
-                    <label for="formEmail">Email Address</label>
-                    <input type="email" name="email" id="formEmail" placeholder="example@email.com" onblur="checkEmail()" required>
-                    <label for="formComments">Comments</label>
-                    <textarea name="comments" id="formComments" placeholder="How may we help you today?" onblur="checkComments()" required></textarea>
-                    <input type="submit" name="submit" id="submitBtn" value="Submit">
-                </form>
-                <script>
+<body>
+    <nav id="addMenuLinks">
+        <!-- The Menu is added with JavaScript! -->
+    </nav>
+    <section class="contentStart" id="contactSection">
+        <h1>Contact</h1>
+        <article id="contactTop">
+            <form name="contact" id="contactForm" method="POST">
+                <label for="formFirst">First Name</label>
+                <input type="text" name="first" id="formFirst" placeholder="John" onblur="checkFirst()" required>
+                <label for="formLast">Last Name</label>
+                <input type="text" name="last" id="formLast" placeholder="Doe" onblur="checkLast()" required>
+                <label for="formEmail">Email Address</label>
+                <input type="email" name="email" id="formEmail" placeholder="example@email.com" onblur="checkEmail()" required>
+                <label for="formComments">Comments</label>
+                <textarea name="comments" id="formComments" placeholder="How may we help you today?" onblur="checkComments()" required></textarea>
+                <input type="submit" name="submit" id="submitBtn" value="Submit">
+            </form>
+            <script>
                     // Form values
                     let first = document.getElementById("formFirst");
                     let last = document.getElementById("formLast");
@@ -68,15 +68,15 @@
                             comments.style.backgroundColor = "white";
                         }
                     }
-                </script>
-            </article>
-            <article id="contactBottom" onmouseover="bright()" onmouseout="dark()">
-                <h2>Other Contact Methods</h2>
-                <p>Address: 123 Somewhere Lane, Someplace MI</p>
-                <p>Email: hello@ourproject.com</p>
-                <p>Phone: (111) 222-3333</p>
-            </article>
-            <script>
+            </script>
+        </article>
+        <article id="contactBottom" onmouseover="bright()" onmouseout="dark()">
+            <h2>Other Contact Methods</h2>
+            <p>Address: 123 Somewhere Lane, Someplace MI</p>
+            <p>Email: hello@ourproject.com</p>
+            <p>Phone: (111) 222-3333</p>
+        </article>
+        <script>
                 let contactBottom = document.getElementById("contactBottom");
 
                 function bright() {
@@ -89,10 +89,19 @@
                     contactBottom.style.color = "white";
                     contactBottom.style.zIndex = "";
                 }
-            </script>
-        </section>
-        <footer id="addFooter">
-            <!-- The Footer is added with JavaScript! -->
-        </footer>
-    </body>
+        </script>
+    </section>
+    <div id="addLoginForm"></div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            }
+    </script>
+    <footer id="addFooter">
+        <!-- The Footer is added with JavaScript! -->
+    </footer>
+</body>
 </html>

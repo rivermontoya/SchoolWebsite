@@ -10,46 +10,55 @@
     <script src="scripts/imports.js"></script>
 
 </head>
-    <body>
-        <nav id="addMenuLinks">
-            <!-- The Menu is added with JavaScript! -->
-        </nav>
-        <section class="contentStart" id="servicesSection">
-            <h1>Build Your Custom Service Package</h1>
-            <p>Select the services you need with the configurations specific to your project, team, or company to help you do what you do best. Let us help you with offering just the right selection of services at just the right price.</p>
+<body>
+    <nav id="addMenuLinks">
+        <!-- The Menu is added with JavaScript! -->
+    </nav>
+    <section class="contentStart" id="servicesSection">
+        <h1>Build Your Custom Service Package</h1>
+        <p>Select the services you need with the configurations specific to your project, team, or company to help you do what you do best. Let us help you with offering just the right selection of services at just the right price.</p>
 
-            <form id="costEstimator" name="costEstForm">
-                <label for="formService">Select a Service: </label>
-                <select id="formService">
-                    <option value="Static Page Content">Static Page Content</option>
-                    <option value="User Login Capability/Forums">User Login Capability/Forums</option>
-                    <option value="Store Capabilities">Store Capabilities</option>
-                    <option value="Private Intranet Capabilities">Private Intranet Capabilities</option>
-                </select>
-                <label for="formQuantity">Select how many users to serve: </label>
-                <select id="formQuantity">
-                    <option value="100">1-100</option>
-                    <option value="1000">100-1000</option>
-                    <option value="10000">1000-10000</option>
-                    <option value="100000">10000 or more</option>
-                </select>
-                <!-- <input type="submit" name="submit" id="submitBtn" value="Submit"> -->
-            </form>
-            <button onclick="addRow()" id="submitBtn">Submit</button>
-            <table id="costTable">
-                <tbody id="costTbody">
-                    <tr>
-                        <th>Service Name</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                    </tr>
-                </tbody>
-            </table>
-            <script src="scripts/costEstimator.js"></script>
-            <p></p>
-        </section>
-        <footer id="addFooter">
-            <!-- The Footer is added with JavaScript! -->
-        </footer>
-    </body>
+        <form id="costEstimator" name="costEstForm">
+            <label for="formService">Select a Service: </label>
+            <select id="formService">
+                <option value="Static Page Content">Static Page Content</option>
+                <option value="User Login Capability/Forums">User Login Capability/Forums</option>
+                <option value="Store Capabilities">Store Capabilities</option>
+                <option value="Private Intranet Capabilities">Private Intranet Capabilities</option>
+            </select>
+            <label for="formQuantity">Select how many users to serve: </label>
+            <select id="formQuantity">
+                <option value="100">1-100</option>
+                <option value="1000">100-1000</option>
+                <option value="10000">1000-10000</option>
+                <option value="100000">10000 or more</option>
+            </select>
+            <!-- <input type="submit" name="submit" id="submitBtn" value="Submit"> -->
+        </form>
+        <button onclick="addRow()" id="submitBtn">Submit</button>
+        <table id="costTable">
+            <tbody id="costTbody">
+                <tr>
+                    <th>Service Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </tbody>
+        </table>
+        <script src="scripts/costEstimator.js"></script>
+        <p></p>
+    </section>
+    <div id="addLoginForm"></div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            }
+    </script>
+    <footer id="addFooter">
+        <!-- The Footer is added with JavaScript! -->
+    </footer>
+</body>
 </html>
