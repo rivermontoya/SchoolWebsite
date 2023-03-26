@@ -18,10 +18,12 @@ Menu.innerHTML += "<a href=\"services.html\">Services</a>";
 Menu.innerHTML += "<a href=\"about.html\">About</a>";
 Menu.innerHTML += "<a href=\"costestimator.html\">Cost Estimator</a>";
 Menu.innerHTML += "<a href=\"contact.html\">Contact</a>";
+//Log in form:
 Menu.innerHTML += "<button class=\"topnav-right\" onclick=\"openForm()\">Login</button>";
 
 var LoginForm = document.getElementById("addLoginForm");
 LoginForm.innerHTML += "<div class=\"form-popup\" id=\"myForm\"><form action=\"/action_page.php\" class=\"form-container\"><h1>Login</h1><label for=\"email\"><b>Email</b></label><input type=\"text\" placeholder=\"Enter Email\" name=\"email\" required><label for=\"psw\"><b>Password</b></label><input type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required><button type=\"submit\" class=\"btn\">Login</button><button type=\"button\" class=\"btn cancel\" onclick=\"closeForm()\">Close</button></form>";
+
 /*------- FOOTER IMPLEMENTATION -------*/
 //get p element by id for footer
 var Footer = document.getElementById("addFooter");

@@ -1,8 +1,29 @@
+/* MEDIA QUERY FORMAT*/
 @media only screen and (max-width:800px) {
     section {
         width: 95%;
-    };
+    }
+    
 }
+@media only screen and (max-width: 700px) {
+    footer p {
+        display: none;
+    }
+    #serviceOptions > div {
+        display: block;
+    }
+    #serviceOptions > div > span {
+        display: inline-block;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 845px) {
+    .scrollToTop {
+        padding: 25px 5px;
+    }
+}
+
+/*Animation transition*/
 .contentStart {
     animation: transitionIn 0.75s;
 }
@@ -13,13 +34,12 @@
     opacity: 0;
     transition: 1s all ease;
 }
-
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
 }
-/*Scrollable reveal section end*/
 
+/*Scrollable reveal section end*/
 @keyframes transitionIn {
     from {
         opacity: 0;

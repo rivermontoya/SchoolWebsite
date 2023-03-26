@@ -1,4 +1,5 @@
-/* reset styles 
+/* reset styles */
+/*
 html {
 	font-size: 18px;
 }
@@ -7,7 +8,8 @@ h2, h3, img, input, label, legend, li, nav, p, section, textarea, ul {
 	border: 0;
 	padding: 0;
 	margin: 0;
-}*/
+}
+*/
 html, body {
     margin: 0;
 }
@@ -17,6 +19,13 @@ body {
     min-height: 100vh;
     background-color: aliceblue;
 }
+
+/*Enhanced mobile-friendly menu design adapted from this example found on YouTube and the GitHub:
+https://youtu.be/kNiic1CaXrQ
+https://github.com/hosseinnabi-ir/CSS-Hamburger-Menu-design
+*/
+
+
 nav {
     display: flex;
     flex-direction: row;
@@ -91,7 +100,7 @@ section {
 /*Cant center the homebox without webkit????*/
     text-align: -webkit-center;
 }
-#contactSection, #servicesSection {
+#contactSection, #servicesSection, #aboutSection {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,17 +314,4 @@ th, td {
 
 .scrollToTop:hover {
     text-decoration: none;
-}
-
-
-/* MEDIA QUERY FORMAT*/
-@media only screen and (max-width: 700px) {
-    footer p {
-        display: none;
-    }
-}
-@media only screen and (max-width: 845px) {
-    .scrollToTop {
-        padding: 25px 5px;
-    }
 }
