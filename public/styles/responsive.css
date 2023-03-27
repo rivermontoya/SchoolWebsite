@@ -23,6 +23,15 @@
     }
 }
 
+@media only screen and (max-width: 500px) {
+    nav .mainNav {
+        display: none;
+    }
+    .openbtn {
+        display: block;
+    }
+}
+
 /*Animation transition*/
 .contentStart {
     animation: transitionIn 0.75s;
