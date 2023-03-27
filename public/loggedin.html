@@ -20,8 +20,8 @@
     </nav>
 
     <section class="contentStart" id="loggedInSection">
-        <h1>Hello, Logged In User</h1>
-
+        <h1>Hello,</h1>
+        <p id="name"></p>
         <div class="landscape">
             <div class="homeBox text-container">
                 <h2>Cajun Cooking Website</h2>
@@ -37,6 +37,11 @@
     <footer id="addFooter">
         <!-- The Footer is added with JavaScript! -->
     </footer>
-
+    <script>
+        let text = window.location.toString();
+        let output = text.slice(90);
+        output = output.split('%')[0];
+        document.getElementById("name").innerHTML = output;
+    </script>
 </body>
 </html>
