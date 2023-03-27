@@ -8,16 +8,19 @@
 */
 
 /*------- NAV BAR IMPLEMENTATION -------*/
+
 //on window load, run loadMenu function
 window.onload = function loadMenu() {
 //get the ul element by its id
-var Menu = document.getElementById("addMenuLinks");
+var Menu = document.getElementsByClassName("mainNav")[0];
+
 //add all links to site as needed
 Menu.innerHTML = "<a href=\"index.html\">Home</a>";
 Menu.innerHTML += "<a href=\"services.html\">Services</a>";
 Menu.innerHTML += "<a href=\"about.html\">About</a>";
 Menu.innerHTML += "<a href=\"costestimator.html\">Cost Estimator</a>";
 Menu.innerHTML += "<a href=\"contact.html\">Contact</a>";
+
 //Log in form:
 Menu.innerHTML += "<button class=\"topnav-right\" onclick=\"openForm()\">Login</button>";
 

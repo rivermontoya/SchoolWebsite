@@ -29,9 +29,15 @@ https://github.com/hosseinnabi-ir/CSS-Hamburger-Menu-design
 nav {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
     background-color: #222222;
     padding: 0 10%;
+}
+nav .mainNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
 }
 nav a {
     text-decoration: none;
@@ -43,6 +49,43 @@ nav a:hover {
 }
 .topnav-right {
     margin-left: auto;
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #222222;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    display: none;
+    margin-left: auto;
+}
+#mobileNav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #222222;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#mobileNav a {
+    font-size: 18pt;
+    padding: 16px 0;
+}
+#mobileNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    font-size: 36px;
+    padding: 10px 0;
 }
 /* The login popup form - hidden by default */
 .form-popup {
