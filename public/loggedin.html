@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>Welcome Page</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,21 +11,21 @@
     <link rel="stylesheet" href="scripts/animateChars/jquery.serialeffect.css" />
     <script src="scripts/animateChars/jquery.slim.min.js"></script>
     <script src="scripts/animateChars/jquery.serialeffect.min.js"></script>
-    <script src="scripts/loggedInImport.js"></script>
+    <script src="scripts/imports.js"></script>
     <script src="scripts/reveal.js"></script>
 </head>
-<body>
-    <nav id="addMenuLinks">
+<body class="loggedInPage">
+    <nav id="mainNav">
         <!-- The Menu is added with JavaScript! -->
     </nav>
 
-    <section class="contentStart" id="loggedInSection">
-        <h1>Hello,</h1>
-        <p id="name"></p>
+    <section class="contentStart" id="loggedInSection" onclick="closeForm()">
+        <h1 id="name">Hello </h1>
+        
         <div class="landscape">
             <div class="homeBox text-container">
-                <h2>Cajun Cooking Website</h2>
-                <p>Date Created</p>
+                <h2 id="websiteName">Your New Website</h2>
+                <p id="dateCreated">Date Created: </p>
                 <p>Monthly Payment</p>
                 <p>Payment Due</p>
                 <p>Make a payment</p>
@@ -38,10 +38,18 @@
         <!-- The Footer is added with JavaScript! -->
     </footer>
     <script>
-        let text = window.location.toString();
-        let output = text.slice(90);
-        output = output.split('%')[0];
-        document.getElementById("name").innerHTML = output;
+        let emailName = window.location.search.split("&").join("=").split("=");
+        emailName = emailName[1];
+        if(emailName == "NaN")
+        {
+            document.getElementById("name").innerHTML += "there!";
+        }
+        else {
+            document.getElementById("websiteName").innerHTML = emailName + "'s Custom Website";
+            document.getElementById("name").innerHTML += emailName;
+        }
+        var td = new Date();
+        document.getElementById("dateCreated").innerHTML += td.toLocaleDateString();
     </script>
 </body>
 </html>

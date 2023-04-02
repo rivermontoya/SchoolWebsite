@@ -1,17 +1,10 @@
 "use strict";
-/*    
-      JavaScript for menu and footer
-      Author: Elisabeth Ryder
-      Date:   2/5/23
-
-      Filename: imports.js
-*/
 
 /*------- NAV BAR IMPLEMENTATION -------*/
 //on window load, run loadMenu function
 window.onload = function loadMenu() {
     //get the ul element by its id
-    var Menu = document.getElementById("addMenuLinks");
+    var Menu = document.getElementById("mainNav");
     //add all links to site as needed
     Menu.innerHTML = "<a href=\"index.html\">Home</a>";
     Menu.innerHTML += "<a href=\"services.html\">Services</a>";
