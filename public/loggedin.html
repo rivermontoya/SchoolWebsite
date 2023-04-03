@@ -39,12 +39,10 @@
     </footer>
     <script>
         let emailName = window.location.search.split("&").join("=").split("=");
-        emailName = emailName[1];
-        if(emailName == "NaN")
-        {
+        emailName = decodeURIComponent(emailName[1]);
+        if (emailName == "NaN") {
             document.getElementById("name").innerHTML += "there!";
-        }
-        else {
+        } else {
             document.getElementById("websiteName").innerHTML = emailName + "'s Custom Website";
             document.getElementById("name").innerHTML += emailName;
         }
