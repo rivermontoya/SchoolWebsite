@@ -26,10 +26,15 @@
             <div class="homeBox text-container">
                 <h2 id="websiteName">Your New Website</h2>
                 <p id="dateCreated">Date Created: </p>
-                <p>Monthly Payment</p>
-                <p>Payment Due</p>
-                <p>Make a payment</p>
+                <p>Monthly Payment: $200</p>
+                <p>Payment Due: 3rd of each month</p>
+                <p>Make a payment: <a href="pay.html">Pay Now</a></p>
                 <p>Request a change</p>
+                <form action="#" onsubmit="event.preventDefault(); submitForm();">
+                    <label for="appointment">Appointment:</label>
+                    <input type="date" id="appointment" name="appointment">
+                    <input type="submit">
+                </form>
             </div>
         </div>
     </section>
@@ -48,6 +53,16 @@
         }
         var td = new Date();
         document.getElementById("dateCreated").innerHTML += td.toLocaleDateString();
+        function submitForm() {
+            const appointmentDate = document.getElementById('appointment').value;
+            const queryParams = new URLSearchParams(window.location.search);
+            queryParams.set('appointment', appointmentDate);
+            const queryString = queryParams.toString();
+            const currentUrl = window.location.href.split('?')[0];
+            const redirectUrl = `${currentUrl}?${queryString}`;
+            window.location.href = redirectUrl;
+            alert('Appointment made');
+        }
     </script>
 </body>
 </html>

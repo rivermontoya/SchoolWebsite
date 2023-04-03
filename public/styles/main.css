@@ -141,7 +141,7 @@ section {
     /*Cant center the homebox without webkit????*/
     text-align: -webkit-center;
 }
-#contactSection, #servicesSection, #aboutSection, #loggedInSection{
+#contactSection, #servicesSection, #aboutSection, #loggedInSection, #paySection{
     display: flex;
     flex-direction: column;
     align-items: center;

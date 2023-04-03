@@ -16,6 +16,9 @@ window.onload = function loadMenu() {
     {
         var Menu = document.getElementById("mainNav");//[0]
     }
+    else if (document.getElementsByClassName('payPage').length >= 1) {
+        var Menu = document.getElementById("mainNav");//[0]
+    }
     else {
         var Menu = document.getElementsByClassName("mainNav")[0];
     }
@@ -30,6 +33,9 @@ window.onload = function loadMenu() {
     if(document.getElementsByClassName('loggedInPage').length >= 1)
     {
         //Do not add login form button if user is already logged in.
+    }
+    else if (document.getElementsByClassName('payPage').length >= 1) {
+        var Menu = document.getElementById("mainNav");//[0]
     }
     else{
         //Log in form:

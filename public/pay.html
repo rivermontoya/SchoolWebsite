@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome Page</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="scripts/animateChars/jquery.serialeffect.css" />
+    <script src="scripts/animateChars/jquery.slim.min.js"></script>
+    <script src="scripts/animateChars/jquery.serialeffect.min.js"></script>
+    <script src="scripts/imports.js"></script>
+    <script src="scripts/reveal.js"></script>
+</head>
+<body class="payPage">
+    <nav id="mainNav">
+        <!-- The Menu is added with JavaScript! -->
+    </nav>
+    <section class="contentStart" id="paySection" onclick="closeForm()">
+    </section>
+    <div id="addLoginForm"></div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <footer id="addFooter">
+        <!-- The Footer is added with JavaScript! -->
+    </footer>
+</body>
+</html>
