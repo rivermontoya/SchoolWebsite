@@ -45,6 +45,9 @@ nav a:hover {
 .topnav-right {
     margin-left: auto;
 }
+.topnav-right:hover {
+    cursor: pointer;
+}
 .openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -174,6 +177,7 @@ form {
 }
 form#costEstimator {
     margin: 15px 15px -10px 15px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.251);
 }
 form label {
     color: black;
@@ -246,13 +250,13 @@ th, td {
     position: relative;
     margin: 15px 20px;
     border-radius: 15px;
-    background-color: darkslateblue;
-    box-shadow: 0 0 10px darkslateblue, 0 0 25px darkslateblue;
+    background-color: rgb(61, 73, 139);
+    box-shadow: 0 0 10px rgb(61, 73, 139), 0 0 25px rgb(61, 73, 139);
 }
 #serviceOptions>div :hover {
     border-radius: 15px;
-    box-shadow: 0 0 20px darkslateblue,
-    0 0 25px darkslateblue;
+    box-shadow: 0 0 20px rgb(61, 73, 139),
+    0 0 25px rgb(61, 73, 139);
 }
 #serviceOptions>div>span {
     display: flex;
@@ -288,6 +292,9 @@ th, td {
     height: 100vh;
     width: 100%;
     object-fit: cover;
+}
+.landscape div {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.251);
 }
 /*homepage text sections*/
 .section1 {
@@ -344,10 +351,10 @@ th, td {
 }
 .scrollToTop img {
     padding: 5px;
-    background-color: #222222;
+    background-color: #333333;
     border-radius: 3em;
-    max-width: 3em;
-    max-height: 3em;
+    max-width: 2em;
+    max-height: 2em;
 }
 
 .scrollToTop:hover {

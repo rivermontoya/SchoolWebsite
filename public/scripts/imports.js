@@ -42,9 +42,13 @@ window.onload = function loadMenu() {
     //get p element by id for footer
     var Footer = document.getElementById("addFooter");
 
+    // Get current year
+    let currentYear = new Date().getFullYear();
+
     //working on centering footer better... styled with footer img
     //in main.css
-    Footer.innerHTML = "<a href=\"index.html\"><img src=\"images/favicon.svg\" alt=\"favicon\"></a>";
+    Footer.innerHTML = "<p>Copyright " + currentYear + "</p>";
+    Footer.innerHTML += "<a href=\"index.html\"><img src=\"images/favicon.svg\" alt=\"favicon\"></a>";
     Footer.innerHTML += "<p><a href=\"index.html\">WebDevs</a></p>";
     Footer.innerHTML += "<p id=\"footDetails\"><a href=\"about.html\">Developed by Team 1</a></p>";
     Footer.innerHTML += "<p><a href=\"contact.html\">Send Us a Contact Email</a></p>";

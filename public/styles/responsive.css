@@ -6,7 +6,7 @@
     
 }
 @media only screen and (max-width: 700px) {
-    footer p {
+    footer p:not(:first-of-type) {
         display: none;
     }
     #serviceOptions > div {
@@ -29,6 +29,10 @@
     }
     .openbtn {
         display: block;
+    }
+    #contactSection {
+        width: 90%;
+        padding: 0 5%;
     }
 }
 
