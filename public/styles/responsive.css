@@ -23,7 +23,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 660px) {
     nav .mainNav {
         display: none;
     }

@@ -34,6 +34,9 @@ nav .mainNav {
     justify-content: flex-start;
     width: 100%;
 }
+#topNavBarLink {
+    padding-top: 20px;
+}
 nav a {
     text-decoration: none;
     color: white;
@@ -44,6 +47,11 @@ nav a:hover {
 }
 .topnav-right {
     margin-left: auto;
+    /*padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;*/
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .topnav-right:hover {
     cursor: pointer;
@@ -145,6 +153,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#headHomeLogo {
+    max-height: 40px;
+    
 }
 footer {
     background-color: #222222;
