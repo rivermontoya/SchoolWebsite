@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="scripts/contactParticles.js"></script>
     <script src="scripts/imports.js"></script>
+    <script src="scripts/mailcheck.min.js"></script>
 </head>
 <body>
     <nav>
@@ -44,6 +45,7 @@
                 <input type="text" name="last" id="formLast" placeholder="Doe" onblur="checkLast()" required>
                 <label for="formEmail">Email Address</label>
                 <input type="email" name="email" id="formEmail" placeholder="example@email.com" onblur="checkEmail()" required>
+                <p id="suggestionOutput" style="margin:0;font-size:12pt"></p>
                 <label for="formComments">Comments</label>
                 <textarea name="comments" id="formComments" placeholder="How may we help you today?" onblur="checkComments()" required></textarea>
                 <input type="submit" name="submit" id="submitBtn" value="Submit">
@@ -87,6 +89,23 @@
                             comments.style.backgroundColor = "white";
                         }
                     }
+            </script>
+            <script>
+                // Adopted from the docs for https://github.com/mailcheck/mailcheck
+                let outputElement = document.getElementById('suggestionOutput');
+
+                $('#formEmail').on('blur', function() {
+                    $(this).mailcheck({
+                        suggested: function(element, suggestion) {
+                            outputElement.innerHTML = "Did you mean: " + suggestion.full + "?";
+                            outputElement.style.marginBottom = "15px";
+                        },
+                        empty: function(element) {
+                            outputElement.innerHTML = "";
+                            outputElement.style.marginBottom = "0";
+                        }
+                    });
+                });
             </script>
         </article>
         <article id="contactBottom" onmouseover="bright()" onmouseout="dark()">
