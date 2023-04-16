@@ -36,7 +36,7 @@
                 document.getElementById("mobileNav").style.width = "0";
             }
         </script>
-    </nav> 
+    </nav>
     <section id="homeSection" class="contentStart" onclick="closeForm()">
         <!------LandscapeDivs------>
         <!------------Landscape class divs resize to fit viewport------------1stPane------------>
@@ -62,7 +62,11 @@
             reveal class is in responsive.css-->
             <div class="homeBox text-container reveal">
                 <h2>We're more than a team.</h2>
-                <p>Our team of experienced web developers, designers, and project managers are dedicated to providing you with the best possible service, from the initial consultation all the way through to the launch of your website. We understand that every business has different requirements and we work closely with our clients to ensure we deliver a website that perfectly reflects their brand, values, and goals.</p>
+                <p>
+                    Our team of experienced web developers, designers, and project managers are dedicated to providing you with the best possible service,
+                    from the initial consultation all the way through to the launch of your website. We understand that every business has different requirements
+                    and we work closely with our clients to ensure we deliver a website that perfectly reflects their brand, values, and goals.
+                </p>
             </div>
         </div>
         <div class="landscape" style="background-color: #c5d8e9">
@@ -78,10 +82,17 @@
                     <li>Quality Assurance</li>
                 </ul>
             </div>
+            <p style="color:black">Want to view some of our code, straight from GitHub?</p>
+            <button onclick="toggleDiv()">View home page code</button>
+
         </div>
+
+
         <!---EndLandscapeDivs--->
     </section>
-
+    <div id="codeDiv" style="display:none;">
+        <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Frivermontoya%2FSchoolWebsite%2Fblob%2Fmain%2Fpublic%2Findex.html&style=vs&type=code&showFullPath=on"></script>
+    </div>
     <a href="#top" class="scrollToTop"><img src="images/backtotoparrows.png" alt="Scroll to the Top"></a>
 
     <footer id="addFooter">
@@ -127,10 +138,21 @@
     <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";
-            }
+        }
         function closeForm() {
             document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <!--Open div button. Contains source code for the page-->
+    <script>
+        function toggleDiv() {
+            var div = document.getElementById("codeDiv");
+            if (div.style.display === "none") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
             }
+        }
     </script>
 </body>
 </html>

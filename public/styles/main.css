@@ -372,3 +372,6 @@ th, td {
 .scrollToTop:hover {
     text-decoration: none;
 }
+#hljs-tag, .emgithub-file, .code-area td.hljs-ln-line {
+    font-size: 18pt !important;
+}
