@@ -58,5 +58,6 @@ window.onload = function loadMenu() {
     Footer.innerHTML += "<p><a href=\"index.html\">WebDevs</a></p>";
     Footer.innerHTML += "<p id=\"footDetails\"><a href=\"about.html\">Developed by Team 1</a></p>";
     Footer.innerHTML += "<p><a href=\"contact.html\">Send Us an Email</a></p>";
+    Footer.innerHTML += "<p><a href=\"ada.html\" style=\"padding-left:50px\">ADA</a></p>";
 }
 //NOTE: The " character must be escaped for the script to work properly.

@@ -46,6 +46,13 @@
                 <label for="formEmail">Email Address</label>
                 <input type="email" name="email" id="formEmail" placeholder="example@email.com" onblur="checkEmail()" required>
                 <p id="suggestionOutput" style="margin:0;font-size:12pt"></p>
+                <label for="formHear">How did you hear about us?</label>
+                <select name="hear" id="formHear">
+                    <option value="Google Listing">Google Listing</option>
+                    <option value="Connections">Connections</option>
+                    <option value="Online Ad">Online Ad</option>
+                    <option value="Other">Other</option>
+                </select>
                 <label for="formComments">Comments</label>
                 <textarea name="comments" id="formComments" placeholder="How may we help you today?" onblur="checkComments()" required></textarea>
                 <input type="submit" name="submit" id="submitBtn" value="Submit">
