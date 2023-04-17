@@ -19,21 +19,21 @@
         <!-- The Menu is added with JavaScript! -->
     </nav>
 
-    <section class="contentStart" id="loggedInSection" onclick="closeForm()">
+    <section class="contentStart" id="loggedInSection">
         <h1 id="name">Hello </h1>
         
         <div class="landscape">
             <div class="homeBox text-container">
                 <h2 id="websiteName">Your New Website</h2>
                 <p id="dateCreated">Date Created: </p>
-                <p>Monthly Payment: $200</p>
+                <p id="monthlyPay">Monthly Payment: $</p>
                 <p>Payment Due: 3rd of each month</p>
                 <p>Make a payment: <a href="pay.html">Pay Now</a></p>
-                <p>Request a change</p>
-                <form action="#" onsubmit="event.preventDefault(); submitForm();">
-                    <label for="appointment">Appointment:</label>
+                <p>Request a change by scheduling an appointment</p>
+                <form action="#" onsubmit="event.preventDefault(); submitForm()">
+                    <label for="appointment">Appointment On:</label>
                     <input type="date" id="appointment" name="appointment">
-                    <input type="submit">
+                    <input type="submit" name="Submit" value="Submit">
                 </form>
             </div>
         </div>
@@ -51,7 +51,12 @@
             document.getElementById("websiteName").innerHTML = emailName + "'s Custom Website";
             document.getElementById("name").innerHTML += emailName;
         }
+        //Code for date Submission change:
         var td = new Date();
+        //set monthly payment to default:
+        var monPay = 200;
+        document.getElementById("monthlyPay").innerHTML += monPay;
+
         document.getElementById("dateCreated").innerHTML += td.toLocaleDateString();
         function submitForm() {
             const appointmentDate = document.getElementById('appointment').value;
@@ -60,8 +65,8 @@
             const queryString = queryParams.toString();
             const currentUrl = window.location.href.split('?')[0];
             const redirectUrl = `${currentUrl}?${queryString}`;
+            alert("Appointment made for: " + appointmentDate);
             window.location.href = redirectUrl;
-            alert('Appointment made');
         }
     </script>
 </body>
