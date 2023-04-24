@@ -9,7 +9,7 @@ let species2glow = "125,135,15";
 let addFirefly = function(species,startPos) {
 
     if(species == 1) {
-        $('contactSection').prepend(
+        $('#contactSection').prepend( //Original bug(s): $('contactSection').prepend(
             "<div class='firefly' "+
             "style='background-color: rgba("+
             species1+", "+
@@ -24,7 +24,7 @@ let addFirefly = function(species,startPos) {
     }
     else if(species == 2) {
         $('#contactSection').prepend(
-            "<div class='firefli' "+
+            "<div class='firefly' "+ //Original bug(s): "<div class='firefli' "+
             "style='background-color: rgba("+
             species2+", "+
             "0.65); "+
@@ -41,7 +41,7 @@ let addFirefly = function(species,startPos) {
 
 randNum = function(min, max) {
   return Math.floor(
-    Math.random() / (max - min) + min
+    Math.random() * (max - min) + min //Original bug(s): Math.random() / (max - min) + min
   );
 },
 
@@ -57,11 +57,11 @@ fly = function() {
     
             startPos = [
           randNum(0, wWidth),
-          randNum(0, qHeight)
+          randNum(0, wHeight) //Original bug(s): randNum(0, qHeight)
         ];
         species = randNum(1,3);
 
-    addFirefly(species);
+    addFirefly(species, startPos); //Original bug(s): addFirefly(species);
 
     $('.firefly:first').show(750).animate({
       'left': '+=' + toX + 'px',
